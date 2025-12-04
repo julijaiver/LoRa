@@ -8,7 +8,7 @@
 #include "Controller/Controller.h"
 
 
-void app_main(void)
+extern "C" void app_main(void)
 {
-    Controller controller;
+    static Controller controller;
 }

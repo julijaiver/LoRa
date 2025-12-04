@@ -184,6 +184,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_ringbuf/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_driver_uart/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/main/cmake_install.cmake")
 endif()
 

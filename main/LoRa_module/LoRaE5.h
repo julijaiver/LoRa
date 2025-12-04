@@ -23,19 +23,23 @@ class LoRaE5
     public:
         LoRaE5(uint32_t TX_pin, uint32_t RX_pin);
 
-        bool init();
-        void send_data(const char* data);
-        int receive_data(char* buffer, size_t buffer_size, uint32_t timeout_ms);
-        bool send_AT(const char* command, char* response, size_t response_size, uint32_t timeout_ms);
-        bool wait_response(const char* expected, uint32_t timeout=LORA_TIMEOUT_MS);
-        //int receiveData(char* buffer, size_t buffer_size, uint32_t timeout=LORA_TIMEOUT_MS);
-        void low_power();
+        bool lora_init();
+        void send_command(const char *cmd);
+        void send_autoon_cmd(const char *cmd);
+        void enable_lowpower(void);
+        int uart_response(uint8_t *buf, int buf_size);
+        int strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data);
+        void read_autoon_response(void);
+        bool get_devui(char *output_data, size_t output_size);
+        void join_gateway(void);
+
     private:
         uint32_t tx_pin;
         uint32_t rx_pin;
         bool initialized;
 
         // clearing UART buffer
+        // idk yet if needed
         void clear_buffer();
 };
 

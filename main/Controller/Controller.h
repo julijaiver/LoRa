@@ -13,17 +13,16 @@
 class Controller
 {
     public:
-        Controller(uint32_t stack_size = 1024, UBaseType_t priority = tskIDLE_PRIORITY + 1);
+        Controller(uint32_t stack_size = 4096, UBaseType_t priority = tskIDLE_PRIORITY + 1);
         static void taskWrapper(void* pvParameters);
 
     private:
         void taskImpl();
-        bool initialize_lora();
+        //bool initialize_lora(); // probably not needed now, implemented it differently
         //void send_AT(const char* command);
         //void parse_AT_response(const char* response);
 
         TaskHandle_t control_handle;
-        const char *name = "CONTROLLER";
         // lora object, maybe better pointer?
         LoRaE5 lora;
         // var for saving AT response

@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "LoRa",
-    "project_version":    "1",
+    "project_version":    "8cbea19-dirty",
     "project_path":       "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa",
     "idf_path":           "/Users/julija/esp/esp-idf",
     "build_dir":          "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32s3-elf-",
     "c_compiler":         "/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/Users/julija/esp/esp-idf/components/efuse/Kconfig;/Users/julija/esp/esp-idf/components/esp_common/Kconfig;/Users/julija/esp/esp-idf/components/esp_driver_gpio/Kconfig;/Users/julija/esp/esp-idf/components/esp_hw_support/Kconfig;/Users/julija/esp/esp-idf/components/esp_mm/Kconfig;/Users/julija/esp/esp-idf/components/esp_partition/Kconfig;/Users/julija/esp/esp-idf/components/esp_pm/Kconfig;/Users/julija/esp/esp-idf/components/esp_rom/Kconfig;/Users/julija/esp/esp-idf/components/esp_security/Kconfig;/Users/julija/esp/esp-idf/components/esp_system/Kconfig;/Users/julija/esp/esp-idf/components/esp_timer/Kconfig;/Users/julija/esp/esp-idf/components/freertos/Kconfig;/Users/julija/esp/esp-idf/components/hal/Kconfig;/Users/julija/esp/esp-idf/components/heap/Kconfig;/Users/julija/esp/esp-idf/components/log/Kconfig;/Users/julija/esp/esp-idf/components/mbedtls/Kconfig;/Users/julija/esp/esp-idf/components/newlib/Kconfig;/Users/julija/esp/esp-idf/components/pthread/Kconfig;/Users/julija/esp/esp-idf/components/soc/Kconfig;/Users/julija/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS" : "/Users/julija/esp/esp-idf/components/efuse/Kconfig;/Users/julija/esp/esp-idf/components/esp_common/Kconfig;/Users/julija/esp/esp-idf/components/esp_driver_gpio/Kconfig;/Users/julija/esp/esp-idf/components/esp_driver_uart/Kconfig;/Users/julija/esp/esp-idf/components/esp_hw_support/Kconfig;/Users/julija/esp/esp-idf/components/esp_mm/Kconfig;/Users/julija/esp/esp-idf/components/esp_partition/Kconfig;/Users/julija/esp/esp-idf/components/esp_pm/Kconfig;/Users/julija/esp/esp-idf/components/esp_ringbuf/Kconfig;/Users/julija/esp/esp-idf/components/esp_rom/Kconfig;/Users/julija/esp/esp-idf/components/esp_security/Kconfig;/Users/julija/esp/esp-idf/components/esp_system/Kconfig;/Users/julija/esp/esp-idf/components/esp_timer/Kconfig;/Users/julija/esp/esp-idf/components/freertos/Kconfig;/Users/julija/esp/esp-idf/components/hal/Kconfig;/Users/julija/esp/esp-idf/components/heap/Kconfig;/Users/julija/esp/esp-idf/components/log/Kconfig;/Users/julija/esp/esp-idf/components/mbedtls/Kconfig;/Users/julija/esp/esp-idf/components/newlib/Kconfig;/Users/julija/esp/esp-idf/components/pthread/Kconfig;/Users/julija/esp/esp-idf/components/soc/Kconfig;/Users/julija/esp/esp-idf/components/spi_flash/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/julija/esp/esp-idf/components/bootloader/Kconfig.projbuild;/Users/julija/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/julija/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/julija/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/julija/esp/esp-idf/components/partition_table/Kconfig.projbuild;/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/main/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_gpio", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/Users/julija/esp/esp-idf/components/app_update", "/Users/julija/esp/esp-idf/components/bootloader", "/Users/julija/esp/esp-idf/components/bootloader_support", "/Users/julija/esp/esp-idf/components/cxx", "/Users/julija/esp/esp-idf/components/efuse", "/Users/julija/esp/esp-idf/components/esp_app_format", "/Users/julija/esp/esp-idf/components/esp_bootloader_format", "/Users/julija/esp/esp-idf/components/esp_common", "/Users/julija/esp/esp-idf/components/esp_driver_gpio", "/Users/julija/esp/esp-idf/components/esp_hw_support", "/Users/julija/esp/esp-idf/components/esp_mm", "/Users/julija/esp/esp-idf/components/esp_partition", "/Users/julija/esp/esp-idf/components/esp_pm", "/Users/julija/esp/esp-idf/components/esp_rom", "/Users/julija/esp/esp-idf/components/esp_security", "/Users/julija/esp/esp-idf/components/esp_system", "/Users/julija/esp/esp-idf/components/esp_timer", "/Users/julija/esp/esp-idf/components/esptool_py", "/Users/julija/esp/esp-idf/components/freertos", "/Users/julija/esp/esp-idf/components/hal", "/Users/julija/esp/esp-idf/components/heap", "/Users/julija/esp/esp-idf/components/log", "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/main", "/Users/julija/esp/esp-idf/components/mbedtls", "/Users/julija/esp/esp-idf/components/newlib", "/Users/julija/esp/esp-idf/components/partition_table", "/Users/julija/esp/esp-idf/components/pthread", "/Users/julija/esp/esp-idf/components/soc", "/Users/julija/esp/esp-idf/components/spi_flash", "/Users/julija/esp/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_gpio", "esp_driver_uart", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/Users/julija/esp/esp-idf/components/app_update", "/Users/julija/esp/esp-idf/components/bootloader", "/Users/julija/esp/esp-idf/components/bootloader_support", "/Users/julija/esp/esp-idf/components/cxx", "/Users/julija/esp/esp-idf/components/efuse", "/Users/julija/esp/esp-idf/components/esp_app_format", "/Users/julija/esp/esp-idf/components/esp_bootloader_format", "/Users/julija/esp/esp-idf/components/esp_common", "/Users/julija/esp/esp-idf/components/esp_driver_gpio", "/Users/julija/esp/esp-idf/components/esp_driver_uart", "/Users/julija/esp/esp-idf/components/esp_hw_support", "/Users/julija/esp/esp-idf/components/esp_mm", "/Users/julija/esp/esp-idf/components/esp_partition", "/Users/julija/esp/esp-idf/components/esp_pm", "/Users/julija/esp/esp-idf/components/esp_ringbuf", "/Users/julija/esp/esp-idf/components/esp_rom", "/Users/julija/esp/esp-idf/components/esp_security", "/Users/julija/esp/esp-idf/components/esp_system", "/Users/julija/esp/esp-idf/components/esp_timer", "/Users/julija/esp/esp-idf/components/esptool_py", "/Users/julija/esp/esp-idf/components/freertos", "/Users/julija/esp/esp-idf/components/hal", "/Users/julija/esp/esp-idf/components/heap", "/Users/julija/esp/esp-idf/components/log", "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/main", "/Users/julija/esp/esp-idf/components/mbedtls", "/Users/julija/esp/esp-idf/components/newlib", "/Users/julija/esp/esp-idf/components/partition_table", "/Users/julija/esp/esp-idf/components/pthread", "/Users/julija/esp/esp-idf/components/soc", "/Users/julija/esp/esp-idf/components/spi_flash", "/Users/julija/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -163,6 +163,21 @@
             "sources": [ "/Users/julija/esp/esp-idf/components/esp_driver_gpio/src/gpio.c", "/Users/julija/esp/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/Users/julija/esp/esp-idf/components/esp_driver_gpio/src/rtc_io.c", "/Users/julija/esp/esp-idf/components/esp_driver_gpio/src/dedic_gpio.c", "/Users/julija/esp/esp-idf/components/esp_driver_gpio/src/gpio_pin_glitch_filter.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_driver_uart": {
+            "alias": "idf::esp_driver_uart",
+            "target": "___idf_esp_driver_uart",
+            "prefix": "idf",
+            "dir": "/Users/julija/esp/esp-idf/components/esp_driver_uart",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_uart",
+            "reqs": [],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_ringbuf", "esp_mm" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
+            "sources": [ "/Users/julija/esp/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/julija/esp/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/julija/esp/esp-idf/components/esp_driver_uart/src/uhci.c" ],
+            "include_dirs": [ "include" ]
+        },
         "esp_hw_support": {
             "alias": "idf::esp_hw_support",
             "target": "___idf_esp_hw_support",
@@ -221,6 +236,21 @@
             "managed_priv_reqs": [],
             "file": "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_pm/libesp_pm.a",
             "sources": [ "/Users/julija/esp/esp-idf/components/esp_pm/pm_locks.c", "/Users/julija/esp/esp-idf/components/esp_pm/pm_trace.c", "/Users/julija/esp/esp-idf/components/esp_pm/pm_impl.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_ringbuf": {
+            "alias": "idf::esp_ringbuf",
+            "target": "___idf_esp_ringbuf",
+            "prefix": "idf",
+            "dir": "/Users/julija/esp/esp-idf/components/esp_ringbuf",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_ringbuf",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
+            "sources": [ "/Users/julija/esp/esp-idf/components/esp_ringbuf/ringbuf.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_rom": {
@@ -365,7 +395,7 @@
             "dir": "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "esp_driver_uart", "esp_driver_gpio" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1782,7 +1812,7 @@
             "prefix": "idf",
             "dir": "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/main",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "esp_driver_uart", "esp_driver_gpio" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],

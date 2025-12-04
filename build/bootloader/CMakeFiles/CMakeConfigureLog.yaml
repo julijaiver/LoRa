@@ -37,10 +37,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -69,10 +65,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/git"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/git"
       - "/Users/julija/Library/Python/3.9/bin/git"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/git"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/git"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/git"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/git"
       - "/opt/homebrew/bin/git"
       - "/opt/homebrew/sbin/git"
       - "/usr/local/bin/git"
@@ -91,14 +83,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -151,10 +135,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -183,10 +163,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/uname"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/uname"
       - "/Users/julija/Library/Python/3.9/bin/uname"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/uname"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/uname"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/uname"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -205,14 +181,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -276,10 +244,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -336,18 +300,6 @@ events:
       - "/Users/julija/Library/Python/3.9/bin/ninja-build"
       - "/Users/julija/Library/Python/3.9/bin/ninja"
       - "/Users/julija/Library/Python/3.9/bin/samu"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/ninja-build"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/ninja"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/samu"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/ninja-build"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/ninja"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/samu"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/ninja-build"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/ninja"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/samu"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/ninja-build"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/ninja"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/samu"
       - "/opt/homebrew/bin/ninja-build"
     found: "/opt/homebrew/bin/ninja"
     search_context:
@@ -363,14 +315,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -424,10 +368,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -460,14 +400,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -527,14 +459,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -612,10 +536,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -643,14 +563,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -705,10 +617,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -736,14 +644,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -798,10 +698,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -829,14 +725,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -891,10 +779,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -922,14 +806,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -984,10 +860,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1015,14 +887,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1077,10 +941,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1108,14 +968,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1170,10 +1022,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1201,14 +1049,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1263,10 +1103,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1294,14 +1130,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1356,10 +1184,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1388,10 +1212,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-dlltool"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-dlltool"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-dlltool"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-dlltool"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-dlltool"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-dlltool"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-dlltool"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-dlltool"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-dlltool"
       - "/usr/local/bin/xtensa-esp32s3-elf-dlltool"
@@ -1419,10 +1239,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/dlltool"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/dlltool"
       - "/Users/julija/Library/Python/3.9/bin/dlltool"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/dlltool"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/dlltool"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/dlltool"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/opt/homebrew/sbin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -1450,14 +1266,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1512,10 +1320,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1543,14 +1347,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1605,10 +1401,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1637,10 +1429,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-tapi"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-tapi"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-tapi"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-tapi"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-tapi"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-tapi"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-tapi"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-tapi"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-tapi"
       - "/usr/local/bin/xtensa-esp32s3-elf-tapi"
@@ -1668,10 +1456,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/tapi"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/tapi"
       - "/Users/julija/Library/Python/3.9/bin/tapi"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/tapi"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/tapi"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/tapi"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/opt/homebrew/sbin/tapi"
       - "/usr/local/bin/tapi"
@@ -1699,14 +1483,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1763,10 +1539,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1795,10 +1567,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
@@ -1826,10 +1594,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-14"
@@ -1857,10 +1621,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar14"
@@ -1888,14 +1648,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -1952,10 +1704,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1984,10 +1732,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
@@ -2015,10 +1759,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
@@ -2046,10 +1786,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib14"
@@ -2077,14 +1813,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2138,10 +1866,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2174,14 +1898,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2241,14 +1957,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2328,10 +2036,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2360,10 +2064,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-14.2"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-14.2"
@@ -2391,10 +2091,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-14"
@@ -2422,10 +2118,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar14"
@@ -2453,14 +2145,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2517,10 +2201,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2549,10 +2229,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-14.2"
@@ -2580,10 +2256,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-14"
@@ -2611,10 +2283,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib14"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib14"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib14"
@@ -2642,14 +2310,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2703,10 +2363,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2739,14 +2395,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2817,10 +2465,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2849,10 +2493,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-"
@@ -2880,10 +2520,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ar-"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ar-"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ar-"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ar-"
@@ -2911,14 +2547,6 @@ events:
         - "/Users/julija/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
         - "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin"
         - "/Users/julija/esp/esp-idf/tools"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
         - "/opt/homebrew/opt/openjdk/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
@@ -2975,10 +2603,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
       - "/Users/julija/Library/Python/3.9/bin/"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -3007,10 +2631,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-"
@@ -3038,10 +2658,6 @@ events:
       - "/opt/homebrew/opt/openjdk/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/Users/julija/Library/Python/3.9/bin/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/ninja/1.12.1/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/xtensa-esp32s3-elf-gcc-ranlib-"
-      - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/opt/homebrew/bin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/opt/homebrew/sbin/xtensa-esp32s3-elf-gcc-ranlib-"
       - "/usr/local/bin/xtensa-esp32s3-elf-gcc-ranlib-"
@@ -3073,14 +2689,6 @@ events:
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/Users/julija/Library/Python/3.9/bin"
-        - "/Users/julija/.espressif/tools/esp-rom-elfs/20241011"
-        - "/Users/julija/.espressif/tools/ninja/1.12.1"
-        - "/Users/julija/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin"
-        - "/Users/julija/.espressif/tools/riscv32-esp-elf-gdb/16.2_20250324/riscv32-esp-elf-gdb/bin"
-        - "/opt/homebrew/opt/openjdk/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
-        - "/Users/julija/Library/Python/3.9/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
@@ -3105,8 +2713,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-hHwFK5"
-      binary: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-hHwFK5"
+      source: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-UPKqCE"
+      binary: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-UPKqCE"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -3116,10 +2724,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-hHwFK5'
+        Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-UPKqCE'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_dfed7
-        [1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_66bc9
+        [1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         Target: xtensa-esp-elf
@@ -3127,8 +2735,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dfed7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccqtGaHl.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_66bc9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccEJqcCD.s
         GNU C17 (crosstool-NG esp-14.2.0_20241119) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version Debian Clang 11.0.1, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
         
@@ -3145,12 +2753,12 @@ events:
          /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: af69fd9f9a101617223bab54c4450538
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccqtGaHl.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccEJqcCD.s
         COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -o cmTC_dfed7   && :
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -o cmTC_66bc9   && :
         Using built-in specs.
         COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         COLLECT_LTO_WRAPPER=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
@@ -3161,10 +2769,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) 
         COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_dfed7' '-dumpdir' 'cmTC_dfed7.'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccc1UpBU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_dfed7 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_66bc9' '-dumpdir' 'cmTC_66bc9.'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccg5MdLA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_66bc9 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc
         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400074
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_dfed7' '-dumpdir' 'cmTC_dfed7.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_66bc9' '-dumpdir' 'cmTC_66bc9.'
         
       exitCode: 0
   -
@@ -3199,10 +2807,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-hHwFK5']
+        ignore line: [Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-UPKqCE']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_dfed7]
-        ignore line: [[1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_66bc9]
+        ignore line: [[1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [Target: xtensa-esp-elf]
@@ -3210,8 +2818,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/']
-        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dfed7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccqtGaHl.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/']
+        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_66bc9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccEJqcCD.s]
         ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20241119) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version Debian Clang 11.0.1  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.2.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -3228,12 +2836,12 @@ events:
         ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: af69fd9f9a101617223bab54c4450538]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/']
-        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccqtGaHl.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/']
+        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccEJqcCD.s]
         ignore line: [COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -o cmTC_dfed7   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -o cmTC_66bc9   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
@@ -3244,13 +2852,13 @@ events:
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) ]
         ignore line: [COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_dfed7' '-dumpdir' 'cmTC_dfed7.']
-        link line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccc1UpBU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_dfed7 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_66bc9' '-dumpdir' 'cmTC_66bc9.']
+        link line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccg5MdLA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_66bc9 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc]
           arg [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccc1UpBU.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccg5MdLA.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -3259,7 +2867,7 @@ events:
           arg [--sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_dfed7] ==> ignore
+          arg [cmTC_66bc9] ==> ignore
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -3268,7 +2876,7 @@ events:
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_dfed7.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_66bc9.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -3276,7 +2884,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400074]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_dfed7' '-dumpdir' 'cmTC_dfed7.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_66bc9' '-dumpdir' 'cmTC_66bc9.']
         ignore line: []
         ignore line: []
         collapse library dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
@@ -3303,8 +2911,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xfeei7"
-      binary: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xfeei7"
+      source: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ZMQAcF"
+      binary: "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ZMQAcF"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3315,10 +2923,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xfeei7'
+        Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ZMQAcF'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_c7b9b
-        [1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2e8de
+        [1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         Target: xtensa-esp-elf
@@ -3326,8 +2934,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c7b9b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//cc8ljVWy.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2e8de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccdHbZ7G.s
         GNU C++17 (crosstool-NG esp-14.2.0_20241119) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version Debian Clang 11.0.1, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
         
@@ -3350,12 +2958,12 @@ events:
          /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: f95fb27b9d6b101b60d0ece4239a97f9
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//cc8ljVWy.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccdHbZ7G.s
         COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c7b9b   && :
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2e8de   && :
         Using built-in specs.
         COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         COLLECT_LTO_WRAPPER=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
@@ -3366,10 +2974,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) 
         COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_c7b9b' '-dumpdir' 'cmTC_c7b9b.'
-         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccGf9iTA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_c7b9b -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_2e8de' '-dumpdir' 'cmTC_2e8de.'
+         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccgFH0Z7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_2e8de -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc
         /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400074
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_c7b9b' '-dumpdir' 'cmTC_c7b9b.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_2e8de' '-dumpdir' 'cmTC_2e8de.'
         
       exitCode: 0
   -
@@ -3410,10 +3018,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-xfeei7']
+        ignore line: [Change Dir: '/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ZMQAcF']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_c7b9b]
-        ignore line: [[1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2e8de]
+        ignore line: [[1/2] /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [Target: xtensa-esp-elf]
@@ -3421,8 +3029,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/']
-        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c7b9b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//cc8ljVWy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/']
+        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2e8de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccdHbZ7G.s]
         ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20241119) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version Debian Clang 11.0.1  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.2.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -3445,12 +3053,12 @@ events:
         ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f95fb27b9d6b101b60d0ece4239a97f9]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/']
-        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//cc8ljVWy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/']
+        ignore line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccdHbZ7G.s]
         ignore line: [COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c7b9b   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles  -v CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2e8de   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
@@ -3461,13 +3069,13 @@ events:
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20241119) ]
         ignore line: [COMPILER_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_c7b9b' '-dumpdir' 'cmTC_c7b9b.']
-        link line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccGf9iTA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_c7b9b -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_2e8de' '-dumpdir' 'cmTC_2e8de.']
+        link line: [ /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccgFH0Z7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_2e8de -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc]
           arg [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccGf9iTA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/j8/wkf2pfhs5f90qn2f2h0hqwvw0000gn/T//ccgFH0Z7.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -3476,7 +3084,7 @@ events:
           arg [--sysroot=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c7b9b] ==> ignore
+          arg [cmTC_2e8de] ==> ignore
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -3485,7 +3093,7 @@ events:
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_c7b9b.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_2e8de.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc] ==> lib [gcc]
@@ -3495,7 +3103,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400074]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_c7b9b' '-dumpdir' 'cmTC_c7b9b.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-nostartfiles' '-v' '-o' 'cmTC_2e8de' '-dumpdir' 'cmTC_2e8de.']
         ignore line: []
         ignore line: []
         collapse library dir [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]

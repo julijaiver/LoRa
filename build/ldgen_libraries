@@ -55,4 +55,8 @@
 /Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/newlib/libnewlib.a
 /Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/pthread/libpthread.a
 /Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/cxx/libcxx.a
+/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
+/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_driver_uart/libesp_driver_uart.a
+/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 /Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/main/libmain.a
+/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build/esp-idf/esp_driver_uart/libesp_driver_uart.a

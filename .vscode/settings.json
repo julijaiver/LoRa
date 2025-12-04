@@ -11,8 +11,9 @@
     "--query-driver=/Users/julija/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
     "--compile-commands-dir=${workspaceFolder}/build"
   ],
-  "idf.port": "/dev/tty.usbmodem101",
+  "idf.port": "/dev/tty.usbmodem5AE71093471",
   "idf.espIdfPath": "/Users/julija/esp/esp-idf",
   "idf.pythonInstallPath": "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin/python",
-  "idf.toolsPath": "/Users/julija/.espressif"
+  "idf.toolsPath": "/Users/julija/.espressif",
+  "idf.flashType": "JTAG"
 }
