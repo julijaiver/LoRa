@@ -1,0 +1,33 @@
+# ESP-IDF build output
+build/
+sdkconfig.old
+
+# Optional: ignore sdkconfig if you want a clean repo
+# sdkconfig
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# CMake / ninja generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+*.ninja
+.ninja_deps
+.ninja_log
+
+# Object and binary files
+*.o
+*.obj
+*.a
+*.elf
+*.bin
+*.map
+
+# Logs
+*.log
+
