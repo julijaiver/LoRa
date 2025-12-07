@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "LoRa",
-    "project_version":    "8cbea19-dirty",
+    "project_version":    "4f786ec-dirty",
     "project_path":       "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa",
     "idf_path":           "/Users/julija/esp/esp-idf",
     "build_dir":          "/Users/julija/school_stuff/25.2/Sensor_Dev_Proj/Code/LoRa/build",

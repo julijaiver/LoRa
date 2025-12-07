@@ -2,6 +2,11 @@
 // Created by Julija Ivaske on 20.11.2025.
 //
 
+
+// TODO: implement send function
+// TODO: implement error handling and retries
+
+
 #include "LoRaE5.h"
 
 static const char* TAG = "LoRaE5";
@@ -20,9 +25,9 @@ bool LoRaE5::lora_init()
         .parity = UART_PARITY_DISABLE,
         .stop_bits = UART_STOP_BITS_1,
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+        .rx_flow_ctrl_thresh = 122,
         .source_clk = UART_SCLK_DEFAULT,
     };
-    int intr_alloc_flags = 0;
 
     uart_driver_install(LORA_UART_NUM, BUFFER_SIZE * 2, 0, 0, NULL, 0);
     uart_param_config(LORA_UART_NUM, &uart_config);
@@ -31,9 +36,29 @@ bool LoRaE5::lora_init()
 
     ESP_LOGI(TAG, "UART ready");
 
+    // init commands to enable low power mode, set lwotaa mode and join network
     vTaskDelay(pdMS_TO_TICKS(100));
-    enable_lowpower();
-    read_autoon_response();
+
+    // things to do just once at the beginning of using the module
+    /*
+    send_autoon_cmd("AT+MODE=LWOTAA");
+    read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    std::string devEui;
+    get_devui(devEui);
+    ESP_LOGI(TAG, "Device EUI: %s", devEui.c_str());
+    send_autoon_cmd("AT+KEY=APPKEY, 8e04c3ff3d92666cf0a92de2a93f8962"); 
+    read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+
+    send_autoon_cmd("AT+KEY=APPKEY");
+    std::string appkey_verify = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    ESP_LOGI(TAG, "AppKey verify: %s", appkey_verify.c_str());
+    */
+
+
+    if (!initial_setup()) {
+        ESP_LOGE(TAG, "LoRa module initial setup failed");
+        return false;
+    }
 
     // need to maybe improve error checking in init
     return true;
@@ -66,7 +91,7 @@ void LoRaE5::enable_lowpower(void) {
 
 // returns length of response from passed buffer and null terminates
 // this only reads response once, so need to think how to read multiple messages back, maybe read until some timeout
-int LoRaE5::uart_response(uint8_t *buf, int buf_size) {
+/*int LoRaE5::uart_response(uint8_t *buf, int buf_size) {
     int len = uart_read_bytes(LORA_UART_NUM, buf, buf_size, pdMS_TO_TICKS(500));
 
     if (len <= 0) {
@@ -75,7 +100,7 @@ int LoRaE5::uart_response(uint8_t *buf, int buf_size) {
     } 
     buf[len] = '\0';
     return len;
-}
+}*/
 
 int LoRaE5::strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data) {
     // validate response prefix and strip it
@@ -90,89 +115,141 @@ int LoRaE5::strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **o
     return response_len;
 }
 
-void LoRaE5::read_autoon_response(void)
-{
-    uint8_t response[BUFFER_SIZE];
-    int response_len = uart_response(response, BUFFER_SIZE);
+std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix) {
+    std::string response;
+    uint8_t buffer[BUFFER_SIZE];
+    TickType_t start_tick = xTaskGetTickCount();
 
-    if (response_len == 0) {
-        return;
+    while ((xTaskGetTickCount() - start_tick) < pdMS_TO_TICKS(timeout_ms)) {
+        TickType_t elapsed = xTaskGetTickCount() - start_tick;
+        TickType_t remaining = pdMS_TO_TICKS(timeout_ms) - elapsed;
+
+        if (remaining <= 0) {
+            break; // timeout reached
+        }
+
+        int len = uart_read_bytes(LORA_UART_NUM, buffer, BUFFER_SIZE-1, remaining);
+
+        if (len > 0) {
+            uint8_t *data_ptr = buffer;
+            int data_len = len;
+
+            if (strip_prefix) {
+                data_len = strip_autoon_prefix(buffer, len, &data_ptr);
+            }
+
+            response.append(reinterpret_cast<char*>(data_ptr), data_len);
+            vTaskDelay(pdMS_TO_TICKS(10)); 
+        } else {
+            if (!response.empty()) {
+                break; 
+            }
+            vTaskDelay(pdMS_TO_TICKS(50)); // wait before retrying
+        }
     }
-
-    // get all bytes (for debugging)
-    printf(">> RAW BYTES (%d): ", response_len);
-    for (int i = 0; i < response_len; ++i) {
-        printf("%02X ", response[i]);
-    }
-    printf("\n");
-
-    uint8_t *data;
-    int data_len = strip_autoon_prefix(response, response_len, &data);
-    data[data_len] = '\0';
-    ESP_LOGI(TAG, ">> %s", (char *)data);
+    return response;
 }
 
 // devEui is passed as array and filled in the func. This as I understand is only used once
 // to get the ID of the module for registering in the LoRa network and after that only need AT+JOIN
-bool LoRaE5::get_devui(char *output_data, size_t output_size) {
+bool LoRaE5::get_devui(std::string &devEui) {
     send_autoon_cmd("AT+ID=DevEui");
 
-    uint8_t response[BUFFER_SIZE];
-    int response_len = uart_response(response, BUFFER_SIZE);
-
-    if (response_len == 0) {
+    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true); // 15s timeout for reading
+    if (response.empty()) {
+        ESP_LOGE(TAG, "No response for DevEui request");
         return false;
     }
 
-    uint8_t *data;
-    int data_len = strip_autoon_prefix(response, response_len, &data);
-    if (data_len < 1) {
-        ESP_LOGE(TAG, "No data after stripping prefix");
-        return false;
-    }
-    data[data_len] = '\0';
-
-    ESP_LOGI(TAG, "Raw response: %s", data);
-
-    if (!strstr((char *)data, "+ID:")) {
-        ESP_LOGE(TAG, "Incorrect response format");
-        return false;
-    }
+    ESP_LOGI(TAG, "Raw response: %s", response.c_str());
 
     // expected response from datasheet: +ID: DevEui, xx:xx:xx:xx:xx:xx:xx:xx
     // reading after comma and also removing colons (do we need id without them?)
-
-    char *comma_pos = strchr((char *)data, ',');
-    if (!comma_pos) {
-        ESP_LOGE(TAG, "Unexpected response format for devEui");
+    size_t pos = response.find("+ID:");
+    if (pos == std::string::npos) {
         return false;
     }
-    comma_pos++;  
-    while (*comma_pos == ' ') comma_pos++;
 
-    size_t j = 0;
-    for (size_t i = 0; comma_pos[i] != '\0' && comma_pos[i] != '\r' && comma_pos[i] != '\n'; ++i) {
-        if (comma_pos[i] != ':' && j < output_size - 1) {
-            output_data[j++] = comma_pos[i];
-        }
+    pos = response.find(',', pos);
+    if (pos == std::string::npos) {
+        return false;
     }
-    output_data[j] = '\0';
+
+    ++pos; // move past comma
+    while (response[pos] == ' ') {
+        ++pos; // skip spaces
+    }
+
+    // get hex without colons
+    std::string devEuiHex;
+    while (pos < response.size() && response[pos] != '\r' && response[pos] != '\n') {
+        if (response[pos] != ':') {
+            devEuiHex.push_back(response[pos]);
+        }
+        ++pos;
+    }
+    devEui = devEuiHex;
     return true;
 }
 
 // this maybe need to do with the gateway :D
-void LoRaE5::join_gateway(void) {
+bool LoRaE5::join_gateway(void) {
     send_autoon_cmd("AT+JOIN");
 
-    uint8_t response[BUFFER_SIZE];
-    int response_len = uart_response(response, BUFFER_SIZE);
-
-    if (response_len > 0) {
-        // here more things will be received than just one line and need to handle possible errors
-        ESP_LOGI(TAG, "Join response: %s", response);
+    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    if (response.empty()) {
+        ESP_LOGE(TAG, "No response for JOIN command");
+        return false;
     }
-    // TODO: read all response messages not just one line
+    ESP_LOGI(TAG, "JOIN response: %s", response.c_str());
+
+    if (response.find("+JOIN: Done") != std::string::npos) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-// TODO: implement send function
-// TODO: implement error handling and retries
+bool LoRaE5::initial_setup(void) {
+    // assuming that devEui and appkey are already set (also LWOTAA mode) (need to set just once), 
+    // this is a switch statement to join network when device turned on
+    setup_states setup = SET_AUTOON;
+    
+    while (setup != SETUP_DONE) {
+        switch (setup) {
+            case SET_AUTOON:
+                enable_lowpower();
+                read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
+                setup = JOIN_NETWORK;
+                break;
+            case JOIN_NETWORK: {
+                int retry = 0;
+                bool joined = false;
+
+                while (retry < 3) {
+                    if (join_gateway()) {
+                        ESP_LOGI(TAG, "Joined LoRa network successfully");
+                        joined = true;
+                        break;
+                    } 
+                    ++retry;
+                    if (retry < 3) {
+                        ESP_LOGW(TAG, "Retrying to join LoRa network (%d/3)", retry);
+                        vTaskDelay(pdMS_TO_TICKS(3000));
+                    }
+                }
+                if (joined) {
+                    setup = SETUP_DONE;
+                } else {
+                    ESP_LOGE(TAG, "Failed to join LoRa network after %d retries", retry);
+                    return false;
+                }
+                break;
+            }
+            case SETUP_DONE:
+                break;
+        }
+    }
+    ESP_LOGI(TAG, "LoRa module setup done, ready to send");
+    return true;
+}

@@ -32,18 +32,18 @@ void Controller::taskImpl()
 
     vTaskDelay(pdMS_TO_TICKS(200));
 
-    // getting devEui 
+    /*// getting devEui 
     char devEui[32];
     if (lora.get_devui(devEui, sizeof(devEui))) {
         ESP_LOGI(TAG, "Device EUI: %s", devEui);
     } else {
         ESP_LOGE(TAG, "Failed to get Device EUI");
-    }
+    }*/
 
     while (true) {
         // now just sending AT command every 10s 
         lora.send_autoon_cmd("AT");
-        lora.read_autoon_response();
+        lora.read_response_with_timeout(2000, false);
         vTaskDelay(pdMS_TO_TICKS(10000)); 
     }
 }

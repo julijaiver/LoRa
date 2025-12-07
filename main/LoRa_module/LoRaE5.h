@@ -11,12 +11,16 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 #include "esp_log.h"
+#include <string>
+
+#include "structs.h"
 
 //definitions for lora customizable
 #define LORA_BAUDRATE 9600
 #define LORA_TIMEOUT_MS 2000
 #define BUFFER_SIZE 256
 #define LORA_UART_NUM UART_NUM_1
+#define RESPONSE_TIMEOUT_MS 15000
 
 class LoRaE5
 {
@@ -29,9 +33,11 @@ class LoRaE5
         void enable_lowpower(void);
         int uart_response(uint8_t *buf, int buf_size);
         int strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data);
-        void read_autoon_response(void);
-        bool get_devui(char *output_data, size_t output_size);
-        void join_gateway(void);
+        std::string read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix);
+        bool get_devui(std::string &devEui);
+        void set_appkey(const char *appkey);
+        bool initial_setup(void);
+        bool join_gateway(void);
 
     private:
         uint32_t tx_pin;
