@@ -2,12 +2,12 @@
 // Created by Julija Ivaske on 20.11.2025.
 //
 
-
-// TODO: implement send function
 // TODO: implement error handling and retries
 
 
 #include "LoRaE5.h"
+#include <sstream>
+#include <iomanip>
 
 static const char* TAG = "LoRaE5";
 
@@ -40,7 +40,6 @@ bool LoRaE5::lora_init()
     vTaskDelay(pdMS_TO_TICKS(100));
 
     // things to do just once at the beginning of using the module
-    /*
     send_autoon_cmd("AT+MODE=LWOTAA");
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
     std::string devEui;
@@ -49,10 +48,11 @@ bool LoRaE5::lora_init()
     send_autoon_cmd("AT+KEY=APPKEY, 8e04c3ff3d92666cf0a92de2a93f8962"); 
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
 
-    send_autoon_cmd("AT+KEY=APPKEY");
-    std::string appkey_verify = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-    ESP_LOGI(TAG, "AppKey verify: %s", appkey_verify.c_str());
-    */
+    // this doesn't work probably because of security reasond?
+    //send_autoon_cmd("AT+KEY=APPKEY");
+    //std::string appkey_verify = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    //ESP_LOGI(TAG, "AppKey verify: %s", appkey_verify.c_str());
+    
 
 
     if (!initial_setup()) {
@@ -70,7 +70,7 @@ void LoRaE5::send_command(const char *cmd)
     uart_write_bytes(LORA_UART_NUM, cmd, strlen(cmd));
     uart_write_bytes(LORA_UART_NUM, "\r\n", 2);
 
-    ESP_LOGI(TAG, ">> %s", cmd);
+    ESP_LOGI(TAG, "<< %s", cmd);
 }
 
 // again simple func to add 4x 0xFF prefix to a command when sending in autoon mode 
@@ -81,7 +81,7 @@ void LoRaE5::send_autoon_cmd(const char *cmd)
     uart_write_bytes(LORA_UART_NUM, (const char *)wake_prefix, 4);
     send_command(cmd);
 
-    ESP_LOGI(TAG, "<< [AUTOON] %s", cmd);
+    ESP_LOGI(TAG, ">> [AUTOON] %s", cmd);
 }
 
 // used in the beginning in init
@@ -252,4 +252,66 @@ bool LoRaE5::initial_setup(void) {
     }
     ESP_LOGI(TAG, "LoRa module setup done, ready to send");
     return true;
+}
+
+
+// template so it can be used for different data types
+template<typename T>
+void LoRaE5::append_bytes(std::vector<uint8_t> &vector, const T &value) {
+    const uint8_t *byte_ptr = reinterpret_cast<const uint8_t*>(&value);
+    vector.insert(vector.end(), byte_ptr, byte_ptr + sizeof(T));
+}
+
+// appending sensor data to payload vector
+std::vector<uint8_t> LoRaE5::sensor_data_payload(const sensor_data &data) {
+    std::vector<uint8_t> payload;
+
+    payload.push_back(static_cast<uint8_t>(data.type)); // first byte is data type
+
+    switch (data.type) {
+        case PARTICULATE:
+            append_bytes(payload, data.data.p_data.pm25);
+            append_bytes(payload, data.data.p_data.pm10);
+            break;
+        case BME690:
+            append_bytes(payload, data.data.b_data.voc);
+            append_bytes(payload, data.data.b_data.pressure);
+            append_bytes(payload, data.data.b_data.humidity);
+            break;
+        case TEMPERATURE:
+            append_bytes(payload, data.data.t_data.temperature);
+            break;
+        default:
+            ESP_LOGW(TAG, "Unknown sensor data type");
+            break;
+    }
+    return payload;
+}
+
+std::string LoRaE5::bytes_to_hex_string(const std::vector<uint8_t> &data) {
+    std::ostringstream ss;
+    ss << std::hex << std::uppercase << std::setfill('0');
+    for (uint8_t byte : data) {
+        ss << std::setw(2) << static_cast<int>(byte);
+    }
+    return ss.str();
+}
+
+bool LoRaE5::send_sensor_data(const sensor_data &data) {
+    auto payload = sensor_data_payload(data);
+
+    // converting payload to hex string for sending via AT command
+    std::string hex_payload = bytes_to_hex_string(payload);
+
+    std::string at_command = "AT+MSGHEX=\"" + hex_payload + "\"";
+    send_autoon_cmd(at_command.c_str());
+
+    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    if (response.find("+MSGHEX: Done") != std::string::npos) {
+        ESP_LOGI(TAG, "Sensor data sent successfully");
+        return true;
+    } else {
+        ESP_LOGE(TAG, "Failed to send sensor data, response: %s", response.c_str());
+        return false;
+    }
 }

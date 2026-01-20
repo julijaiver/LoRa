@@ -12,6 +12,7 @@
 #include "sdkconfig.h"
 #include "esp_log.h"
 #include <string>
+#include <vector>
 
 #include "structs.h"
 
@@ -38,6 +39,14 @@ class LoRaE5
         void set_appkey(const char *appkey);
         bool initial_setup(void);
         bool join_gateway(void);
+
+        // funcs for sending sensor data
+        std::vector<uint8_t> sensor_data_payload(const sensor_data &data);
+        std::string bytes_to_hex_string(const std::vector<uint8_t> &data);
+        // a template to convert data to bytes and add it to the vector
+        template<typename T>
+        void append_bytes(std::vector<uint8_t> &vec, const T &value);
+        bool send_sensor_data(const sensor_data &data);
 
     private:
         uint32_t tx_pin;
