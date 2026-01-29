@@ -5,11 +5,28 @@
 // TODO: implement error handling and retries
 
 
-#include "LoRaE5.h"
 #include <sstream>
 #include <iomanip>
+#include <cstring>
+#include <map>
+
+#include "LoRaE5.h"
+
+#define APPKEY "4ef467c55845a4ad50049af684926467"
 
 static const char* TAG = "LoRaE5";
+
+static const std::map<int8_t, const char*> lora_errors {
+    { -1, "Parameter is invalid" },
+    { -10, "Command is unknown" },
+    { -11, "Command is in wrong format" },
+    { -12, "Command is unavailable in current mode (Check with \"AT+MODE\")"},
+    { -20, "Too many parameters. LoRaWAN modem support max 15 parameters" },
+    { -21, "Length of command is too long (exceed 528 bytes)" },
+    { -22, "Receive end symbol timeout, command must end with <LF>" },
+    { -23, "Invalid character received." },
+    { -24, "Either -21, -22 or -23." }
+};
 
 LoRaE5::LoRaE5(uint32_t TX_pin, uint32_t RX_pin)
     : tx_pin(TX_pin), rx_pin(RX_pin), initialized(false)
@@ -41,11 +58,16 @@ bool LoRaE5::lora_init()
 
     // things to do just once at the beginning of using the module
     send_autoon_cmd("AT+MODE=LWOTAA");
-    read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    std::string response {};
+    response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    if (response != "+MODE: LWOTAA\r\n") {
+        ESP_LOGE(TAG, "Failed to enter LWOTAA mode. Got response: '%s'", response.c_str());
+        return false;
+    }
     std::string devEui;
     get_devui(devEui);
     ESP_LOGI(TAG, "Device EUI: %s", devEui.c_str());
-    send_autoon_cmd("AT+KEY=APPKEY, 8e04c3ff3d92666cf0a92de2a93f8962"); 
+    send_autoon_cmd("AT+KEY=APPKEY, " APPKEY); 
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
 
     // this doesn't work probably because of security reasond?
@@ -53,8 +75,6 @@ bool LoRaE5::lora_init()
     //std::string appkey_verify = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
     //ESP_LOGI(TAG, "AppKey verify: %s", appkey_verify.c_str());
     
-
-
     if (!initial_setup()) {
         ESP_LOGE(TAG, "LoRa module initial setup failed");
         return false;
@@ -69,6 +89,7 @@ void LoRaE5::send_command(const char *cmd)
 {
     uart_write_bytes(LORA_UART_NUM, cmd, strlen(cmd));
     uart_write_bytes(LORA_UART_NUM, "\r\n", 2);
+    uart_flush(LORA_UART_NUM);
 
     ESP_LOGI(TAG, "<< %s", cmd);
 }
@@ -116,15 +137,17 @@ int LoRaE5::strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **o
 }
 
 std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix) {
-    std::string response;
-    uint8_t buffer[BUFFER_SIZE];
+    std::string response { "" };
+    uint8_t buffer[BUFFER_SIZE] { 0 };
     TickType_t start_tick = xTaskGetTickCount();
 
-    while ((xTaskGetTickCount() - start_tick) < pdMS_TO_TICKS(timeout_ms)) {
+    while (true) {
         TickType_t elapsed = xTaskGetTickCount() - start_tick;
-        TickType_t remaining = pdMS_TO_TICKS(timeout_ms) - elapsed;
+        // Must be a signed int to avoid underflow
+        int remaining = pdMS_TO_TICKS(timeout_ms) - elapsed;
 
         if (remaining <= 0) {
+            ESP_LOGI(TAG, "read_response_with_timeout timed out.");
             break; // timeout reached
         }
 
@@ -147,6 +170,30 @@ std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_p
             vTaskDelay(pdMS_TO_TICKS(50)); // wait before retrying
         }
     }
+
+    /*
+       Can we do something else with errors other than log them?
+       Maybe talk with deployment team about sending them to the terminal
+       used during deployment?
+    */
+    std::size_t error_pos { response.find("ERROR(") };
+    if (error_pos != std::string::npos) {
+        constexpr std::size_t skip { std::string_view{"ERROR("}.length() };
+        error_pos += skip;
+        const std::size_t error_end { response.find(")", error_pos) };
+        int error_code {};
+        const std::errc ec { std::from_chars(response.data() + error_pos, response.data() + error_end, error_code).ec };
+        if (ec == std::errc::invalid_argument || ec == std::errc::result_out_of_range) {
+            ESP_LOGE(TAG, "Failed to parse LoRa error code. Error: '%s'", response.c_str());
+        } else {
+            if (lora_errors.contains(error_code)) {
+                ESP_LOGE(TAG, "Got error from lora module: %d: %s", error_code, lora_errors.at(error_code));
+            } else {
+                ESP_LOGE(TAG, "Got unknown error from lora module: %d", error_code);
+            }
+        }
+    }
+
     return response;
 }
 
@@ -196,17 +243,31 @@ bool LoRaE5::get_devui(std::string &devEui) {
 bool LoRaE5::join_gateway(void) {
     send_autoon_cmd("AT+JOIN");
 
-    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-    if (response.empty()) {
-        ESP_LOGE(TAG, "No response for JOIN command");
-        return false;
-    }
-    ESP_LOGI(TAG, "JOIN response: %s", response.c_str());
+    while (true) {
+        std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+        if (response.empty()) {
+            ESP_LOGE(TAG, "No response for JOIN command");
+            return false;
+        }
+        ESP_LOGI(TAG, "JOIN response: %s", response.c_str());
 
-    if (response.find("+JOIN: Done") != std::string::npos) {
-        return true;
-    } else {
-        return false;
+        /*
+           Other responses that are ignored since they mostly indicate
+           that the joining process is ongoing:
+
+           - +JOIN: Starting
+           - +JOIN: NORMAL
+           - +JOIN: NetID ...
+           - +JOIN: LoRaWAN modem is busy
+       */
+
+        if (response.contains("+JOIN: Join failed")) {
+            return false;
+        }
+
+        if (response.contains("+JOIN: Done")) {
+            return true;
+        }
     }
 }
 

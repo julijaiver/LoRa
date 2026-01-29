@@ -5,10 +5,15 @@
 #include "LoRa_Task.h"
 #include "esp_log.h"
 
+#define TX 43
+#define RX 44
+// #define TX 16
+// #define RX 17
+
 static const char* TAG = "LoRa_Controller";
 
 LoRa_Task::LoRa_Task(QueueHandle_t to_LoRa, uint32_t stack_size, UBaseType_t priority)
-            : lora(17, 18), to_LoRa(to_LoRa)
+            : lora(TX, RX), to_LoRa(to_LoRa)
 {
     if (!lora.lora_init()) {
     ESP_LOGE(TAG, "LoRa init failed!");
