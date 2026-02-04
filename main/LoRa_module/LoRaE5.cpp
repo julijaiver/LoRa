@@ -12,7 +12,7 @@
 
 #include "LoRaE5.h"
 
-#define APPKEY "4ef467c55845a4ad50049af684926467"
+#define APPKEY "8e04c3ff3d92666cf0a92de2a93f8962"
 
 static const char* TAG = "LoRaE5";
 

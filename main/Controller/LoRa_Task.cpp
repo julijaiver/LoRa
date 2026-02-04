@@ -5,10 +5,10 @@
 #include "LoRa_Task.h"
 #include "esp_log.h"
 
-#define TX 43
-#define RX 44
-// #define TX 16
-// #define RX 17
+//#define TX 43
+//#define RX 44
+#define TX 16
+#define RX 17
 
 static const char* TAG = "LoRa_Controller";
 
