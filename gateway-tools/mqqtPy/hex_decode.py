@@ -5,30 +5,31 @@ import struct
 
 # unpack data and check the identifier to see which sensor data is received
 # data saved in a nested dictionary
-def unpack_data(hex_str, endiannes):
-    identifier = hex_str[0:2]
+def unpack_data(data_hex, deveui, endianness):
+    hex_str = data_hex.upper()
+    identifier = data_hex[0:2]
     if identifier == '01':
         data_type = "particulate"
-        pm25 = hex_str[2:10]
-        pm10 = hex_str[10:18]
-        data = {"pm25": round(hex_to_float(pm25, endiannes), 2),
-                "pm10": round(hex_to_float(pm10, endiannes), 2)}
+        pm25 = data_hex[2:10]
+        pm10 = data_hex[10:18]
+        data = {"pm25": round(hex_to_float(pm25, endianness), 2),
+                "pm10": round(hex_to_float(pm10, endianness), 2)}
 
     elif identifier == '02':
         data_type = "BME690"
-        voc = hex_str[2:10]
-        pressure = hex_str[10:18]
-        humidity = hex_str[18:26]
-        data = {"voc": round(hex_to_float(voc, endiannes), 2),
-                "pressure": round(hex_to_float(pressure, endiannes), 2),
-                "humidity": round(hex_to_float(humidity, endiannes), 2)}
+        voc = data_hex[2:10]
+        pressure = data_hex[10:18]
+        humidity = data_hex[18:26]
+        data = {"voc": round(hex_to_float(voc, endianness), 2),
+                "pressure": round(hex_to_float(pressure, endianness), 2),
+                "humidity": round(hex_to_float(humidity, endianness), 2)}
 
     elif identifier == '03':
         data_type = "temperature"
-        temperature = hex_str[2:10]
-        data = {"temperature": hex_to_float(temperature, endiannes)}
+        temperature = data_hex[2:10]
+        data = {"temperature": hex_to_float(temperature, endianness)}
 
-    return {"type": data_type, "data": data}
+    return {"devEui": deveui, "type": data_type, "data": data}
 
 def hex_to_float(hex_str, endianness):
     #int_val = int(hex_str, 16)

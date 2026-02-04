@@ -69,14 +69,10 @@ bool LoRaE5::lora_init()
     ESP_LOGI(TAG, "Device EUI: %s", devEui.c_str());
     send_autoon_cmd("AT+KEY=APPKEY, " APPKEY); 
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-
-    // this doesn't work probably because of security reasond?
-    //send_autoon_cmd("AT+KEY=APPKEY");
-    //std::string appkey_verify = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-    //ESP_LOGI(TAG, "AppKey verify: %s", appkey_verify.c_str());
     
     if (!initial_setup()) {
         ESP_LOGE(TAG, "LoRa module initial setup failed");
+        uart_driver_delete(LORA_UART_NUM);
         return false;
     }
 
@@ -110,19 +106,6 @@ void LoRaE5::enable_lowpower(void) {
     send_command("AT+LOWPOWER=AUTOON");
 }
 
-// returns length of response from passed buffer and null terminates
-// this only reads response once, so need to think how to read multiple messages back, maybe read until some timeout
-/*int LoRaE5::uart_response(uint8_t *buf, int buf_size) {
-    int len = uart_read_bytes(LORA_UART_NUM, buf, buf_size, pdMS_TO_TICKS(500));
-
-    if (len <= 0) {
-        ESP_LOGW(TAG, "No response");
-        return 0;
-    } 
-    buf[len] = '\0';
-    return len;
-}*/
-
 int LoRaE5::strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data) {
     // validate response prefix and strip it
     if (response_len >= 4 &&
@@ -140,6 +123,9 @@ std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_p
     std::string response { "" };
     uint8_t buffer[BUFFER_SIZE] { 0 };
     TickType_t start_tick = xTaskGetTickCount();
+    TickType_t last_data_tick = start_tick;
+    const TickType_t ticks_without_data = pdMS_TO_TICKS(100); // for checking if no new data came in last 100ms
+    bool first_read = true;
 
     while (true) {
         TickType_t elapsed = xTaskGetTickCount() - start_tick;
@@ -147,25 +133,31 @@ std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_p
         int remaining = pdMS_TO_TICKS(timeout_ms) - elapsed;
 
         if (remaining <= 0) {
-            ESP_LOGI(TAG, "read_response_with_timeout timed out.");
+            //ESP_LOGI(TAG, "read_response_with_timeout timed out.");
             break; // timeout reached
         }
 
-        int len = uart_read_bytes(LORA_UART_NUM, buffer, BUFFER_SIZE-1, remaining);
+        TickType_t read_timeout = remaining < ticks_without_data ? remaining : ticks_without_data;
+        int len = uart_read_bytes(LORA_UART_NUM, buffer, BUFFER_SIZE-1, read_timeout);
 
         if (len > 0) {
             uint8_t *data_ptr = buffer;
             int data_len = len;
 
-            if (strip_prefix) {
+            if (strip_prefix && first_read) { // to only strip prefix from first chunk
                 data_len = strip_autoon_prefix(buffer, len, &data_ptr);
+                first_read = false;
             }
 
             response.append(reinterpret_cast<char*>(data_ptr), data_len);
-            vTaskDelay(pdMS_TO_TICKS(10)); 
+            last_data_tick = xTaskGetTickCount();
         } else {
             if (!response.empty()) {
-                break; 
+                TickType_t time_since_last_data = xTaskGetTickCount() - last_data_tick;
+                if (time_since_last_data >= ticks_without_data) {
+                    ESP_LOGI(TAG, "No new data for %u ms, ending read.", pdTICKS_TO_MS(time_since_last_data));
+                    break; 
+                }
             }
             vTaskDelay(pdMS_TO_TICKS(50)); // wait before retrying
         }
@@ -241,78 +233,85 @@ bool LoRaE5::get_devui(std::string &devEui) {
 
 // this maybe need to do with the gateway :D
 bool LoRaE5::join_gateway(void) {
+    const uint32_t READ_TIMEOUT_MS = 5000; // for each response
+    const uint32_t JOIN_TIMEOUT_MS = 30000; // longer for joining
     send_autoon_cmd("AT+JOIN");
 
+    TickType_t start_tick = xTaskGetTickCount();
     while (true) {
-        std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-        if (response.empty()) {
-            ESP_LOGE(TAG, "No response for JOIN command");
+        TickType_t elapsed = xTaskGetTickCount() - start_tick;
+
+        if (elapsed >= pdMS_TO_TICKS(JOIN_TIMEOUT_MS)) {
+            ESP_LOGE(TAG, "Timeout waiting for JOIN completion");
             return false;
         }
-        ESP_LOGI(TAG, "JOIN response: %s", response.c_str());
 
+        uint32_t remaining_ms = JOIN_TIMEOUT_MS - pdTICKS_TO_MS(elapsed);
+        uint32_t read_timeout = remaining_ms < READ_TIMEOUT_MS ? remaining_ms : READ_TIMEOUT_MS;
+        
+        std::string response = read_response_with_timeout(read_timeout, true);
+
+        if (!response.empty()) {
+            if (response.find("+JOIN: Done") != std::string::npos) {
+                return true;
+            }
+
+            if (response.find("+JOIN: Join failed") != std::string::npos) {
+                return false;
+            }
+
+            bool in_progress =
+                response.find("+JOIN: Start") != std::string::npos ||
+                response.find("+JOIN: NORMAL") != std::string::npos ||
+                response.find("+JOIN: LoRaWAN modem is busy") != std::string::npos ||
+                response.find("+JOIN: NetID") != std::string::npos ||
+                response.find("+JOIN: Joined already") != std::string::npos;
+
+            if (in_progress) {
+                // thought that the symbols printed in the beginning are newlines, but they are still there :D 
+                std::string no_newline_response = response;
+                std::replace(no_newline_response.begin(), no_newline_response.end(), '\n', ' ');
+                std::replace(no_newline_response.begin(), no_newline_response.end(), '\r', ' ');
+                ESP_LOGI(TAG, "JOIN in progress: %s", no_newline_response.c_str());
+            } else {
+                ESP_LOGE(TAG, "Failed to join LoRa network, response: %s", response.c_str());
+                return false;   
+            }
+        }
+        //ESP_LOGI(TAG, "JOIN response: %s", response.c_str());
         /*
            Other responses that are ignored since they mostly indicate
            that the joining process is ongoing:
-
            - +JOIN: Starting
            - +JOIN: NORMAL
            - +JOIN: NetID ...
            - +JOIN: LoRaWAN modem is busy
        */
-
-        if (response.contains("+JOIN: Join failed")) {
-            return false;
-        }
-
-        if (response.contains("+JOIN: Done")) {
-            return true;
-        }
+      // now they are printed anyway in the logs
+        
     }
 }
 
 bool LoRaE5::initial_setup(void) {
     // assuming that devEui and appkey are already set (also LWOTAA mode) (need to set just once), 
     // this is a switch statement to join network when device turned on
-    setup_states setup = SET_AUTOON;
-    
-    while (setup != SETUP_DONE) {
-        switch (setup) {
-            case SET_AUTOON:
-                enable_lowpower();
-                read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
-                setup = JOIN_NETWORK;
-                break;
-            case JOIN_NETWORK: {
-                int retry = 0;
-                bool joined = false;
+    enable_lowpower();
+    read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
 
-                while (retry < 3) {
-                    if (join_gateway()) {
-                        ESP_LOGI(TAG, "Joined LoRa network successfully");
-                        joined = true;
-                        break;
-                    } 
-                    ++retry;
-                    if (retry < 3) {
-                        ESP_LOGW(TAG, "Retrying to join LoRa network (%d/3)", retry);
-                        vTaskDelay(pdMS_TO_TICKS(3000));
-                    }
-                }
-                if (joined) {
-                    setup = SETUP_DONE;
-                } else {
-                    ESP_LOGE(TAG, "Failed to join LoRa network after %d retries", retry);
-                    return false;
-                }
-                break;
-            }
-            case SETUP_DONE:
-                break;
+    for (int attempt = 1; attempt <= 3; ++attempt) {
+        ESP_LOGI(TAG, "Joining LoRa network, attempt %d", attempt);
+        if (join_gateway()) {
+            ESP_LOGI(TAG, "Successfully joined LoRa network");
+            return true;
         }
+
+        if (attempt < 3) {
+            ESP_LOGI(TAG, "Retrying to join LoRa network in 5 seconds...");
+            vTaskDelay(pdMS_TO_TICKS(5000));
+        } 
     }
-    ESP_LOGI(TAG, "LoRa module setup done, ready to send");
-    return true;
+    ESP_LOGE(TAG, "Failed to join LoRa network on attempt 3");
+    return false;
 }
 
 
@@ -360,19 +359,53 @@ std::string LoRaE5::bytes_to_hex_string(const std::vector<uint8_t> &data) {
 
 bool LoRaE5::send_sensor_data(const sensor_data &data) {
     auto payload = sensor_data_payload(data);
-
     // converting payload to hex string for sending via AT command
     std::string hex_payload = bytes_to_hex_string(payload);
-
     std::string at_command = "AT+MSGHEX=\"" + hex_payload + "\"";
+
     send_autoon_cmd(at_command.c_str());
 
-    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
-    if (response.find("+MSGHEX: Done") != std::string::npos) {
-        ESP_LOGI(TAG, "Sensor data sent successfully");
-        return true;
-    } else {
-        ESP_LOGE(TAG, "Failed to send sensor data, response: %s", response.c_str());
-        return false;
+    // keep reading response until get confirmation or error
+    TickType_t start_tick = xTaskGetTickCount();
+    while (true) {
+        TickType_t elapsed = xTaskGetTickCount() - start_tick;
+
+        if (elapsed >= pdMS_TO_TICKS(RESPONSE_TIMEOUT_MS)) {
+            ESP_LOGE(TAG, "Timeout waiting for MSGHEX confirmation");
+            return false;
+        }
+
+        uint32_t remaining_ms = RESPONSE_TIMEOUT_MS - pdTICKS_TO_MS(elapsed);
+        std::string response = read_response_with_timeout(remaining_ms, true);
+
+        if (!response.empty()) {
+            // checking if sent successfully
+            if (response.find("+MSGHEX: Done") != std::string::npos) {
+                ESP_LOGI(TAG, "Sensor data sent successfully");
+                return true;
+            }
+            // checking for fatal errors
+            if (response.find("+MSGHEX: Please join network first") != std::string::npos) {
+                ESP_LOGE(TAG, "Failed MSGHEX: Not joined to network");
+                return false;
+            }
+            if (response.find("ERROR") != std::string::npos) {
+                ESP_LOGE(TAG, "Failed MSGHEX, got ERROR response");
+                return false;
+            }
+
+            // these indicate that sending is still in progress, so continue waiting
+            bool in_progress = 
+                response.find("+MSGHEX: Start") != std::string::npos ||
+                response.find("+MSGHEX: Wait") != std::string::npos ||
+                response.find("+MSGHEX: LoRaWAN modem is busy") != std::string::npos;
+            
+            if (in_progress) {
+                ESP_LOGI(TAG, "MSGHEX in progress: %s", response.c_str());
+            } else {
+                ESP_LOGE(TAG, "Failed to send sensor data, response: %s", response.c_str());   
+                return false;
+            }
+        }
     }
 }

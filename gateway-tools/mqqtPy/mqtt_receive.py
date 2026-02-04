@@ -9,13 +9,20 @@ def on_connect(client, userdata, flags, reason_code, properties):
 
 def on_message(client, userdata, msg):
     json_data = json.loads(msg.payload)
+    #print(f"{json_data}")
     base64_data = json_data['data']
+
+    # there are two values in received data that can be used for identification:
+    # ['deviceProfileName'] and ['devEui']
+    device_info = json_data['deviceInfo']
+    device_name = device_info['deviceProfileName']
+    device_eui = device_info['devEui']
 
     hex_str = base64.b64decode(base64_data).hex().upper()
     print(f"Hex data: {hex_str}")
 
     print("Decoded: ")
-    print(hex_decode.unpack_data(hex_str, 'little'))
+    print(hex_decode.unpack_data(hex_str, device_eui, 'little'))
 
 client = mqtt.Client(
     client_id="mac-python-subscriber",

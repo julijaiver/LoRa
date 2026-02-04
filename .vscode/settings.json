@@ -15,5 +15,6 @@
   "idf.espIdfPath": "/Users/julija/esp/esp-idf",
   "idf.pythonInstallPath": "/Users/julija/.espressif/python_env/idf5.5_py3.13_env/bin/python",
   "idf.toolsPath": "/Users/julija/.espressif",
-  "idf.flashType": "JTAG"
+  "idf.flashType": "JTAG",
+  "idf.currentSetup": "/Users/julija/esp/esp-idf"
 }
