@@ -9,7 +9,7 @@
 
 #include "LoRaE5.h"
 
-#define APPKEY "8e04c3ff3d92666cf0a92de2a93f8962"
+#define APPKEY "<insert app key here>"
 
 static const char* TAG = "LoRaE5";
 
