@@ -284,6 +284,7 @@ bool LoRaE5::initial_setup(void) {
     enable_lowpower();
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
 
+    #ifdef GATEWAY_SETUP_DONE
     for (int attempt = 1; attempt <= 3; ++attempt) {
         ESP_LOGI(TAG, "Joining LoRa network, attempt %d", attempt);
         if (join_gateway()) {
@@ -298,6 +299,7 @@ bool LoRaE5::initial_setup(void) {
     }
     ESP_LOGE(TAG, "Failed to join LoRa network on attempt 3");
     return false;
+    #endif
 }
 
 
