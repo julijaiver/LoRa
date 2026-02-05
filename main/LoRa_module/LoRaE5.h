@@ -22,6 +22,7 @@
 #define BUFFER_SIZE 256
 #define LORA_UART_NUM UART_NUM_1
 #define RESPONSE_TIMEOUT_MS 10000
+#define JOIN_TIMEOUT_MS 30000
 
 class LoRaE5
 {
@@ -35,6 +36,8 @@ class LoRaE5
         int uart_response(uint8_t *buf, int buf_size);
         int strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data);
         std::string read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix);
+        std::string read_until_found(const std::vector<std::string> &expected_responses, uint32_t timeout_ms, bool strip_prefix);
+        void log_error_response(const std::string &response);
         bool get_devui(std::string &devEui);
         void set_appkey(const char *appkey);
         bool initial_setup(void);

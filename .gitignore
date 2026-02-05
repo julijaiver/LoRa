@@ -31,3 +31,5 @@ cmake_install.cmake
 # Logs
 *.log
 
+#pycache 
+__pycache__/

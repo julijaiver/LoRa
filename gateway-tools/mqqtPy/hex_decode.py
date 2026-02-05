@@ -9,13 +9,28 @@ def unpack_data(data_hex, deveui, endianness):
     hex_str = data_hex.upper()
     identifier = data_hex[0:2]
     if identifier == '01':
-        data_type = "particulate"
-        pm25 = data_hex[2:10]
-        pm10 = data_hex[10:18]
-        data = {"pm25": round(hex_to_float(pm25, endianness), 2),
-                "pm10": round(hex_to_float(pm10, endianness), 2)}
+        data_type = "SPS30"
+        pm25_numerical = data_hex[2:10]
+        pm25_mass = data_hex[10:18]
+        pm10_numerical = data_hex[18:26]
+        pm10_mass = data_hex[26:34]
+        data = {"pm25": {"numerical": round(hex_to_float(pm25_numerical, endianness), 2),
+                         "mass": round(hex_to_float(pm25_mass, endianness), 2)},
+                "pm10": {"numerical": round(hex_to_float(pm10_numerical, endianness), 2),
+                         "mass": round(hex_to_float(pm10_mass, endianness), 2)}}
 
     elif identifier == '02':
+        data_type = "BMV080"
+        pm25_numerical = data_hex[2:10]
+        pm25_mass = data_hex[10:18]
+        pm10_numerical = data_hex[18:26]
+        pm10_mass = data_hex[26:34]
+        data = {"pm25": {"numerical": round(hex_to_float(pm25_numerical, endianness), 2),
+                         "mass": round(hex_to_float(pm25_mass, endianness), 2)},
+                "pm10": {"numerical": round(hex_to_float(pm10_numerical, endianness), 2),
+                         "mass": round(hex_to_float(pm10_mass, endianness), 2)}}
+
+    elif identifier == '03':
         data_type = "BME690"
         voc = data_hex[2:10]
         pressure = data_hex[10:18]
@@ -24,7 +39,7 @@ def unpack_data(data_hex, deveui, endianness):
                 "pressure": round(hex_to_float(pressure, endianness), 2),
                 "humidity": round(hex_to_float(humidity, endianness), 2)}
 
-    elif identifier == '03':
+    elif identifier == '04':
         data_type = "temperature"
         temperature = data_hex[2:10]
         data = {"temperature": hex_to_float(temperature, endianness)}
