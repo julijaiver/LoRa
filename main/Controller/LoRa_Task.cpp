@@ -10,6 +10,8 @@
 #define TX 17
 #define RX 16
 
+//#define GATEWAY_SETUP_DONE
+
 static const char* TAG = "LoRa_Controller";
 
 LoRa_Task::LoRa_Task(QueueHandle_t to_LoRa, uint32_t stack_size, UBaseType_t priority)
@@ -33,6 +35,8 @@ void LoRa_Task::taskWrapper(void* pvParameters)
 void LoRa_Task::taskImpl()
 {
     while (true) {
+        printf("Set up gateway");
+        #ifdef GATEWAY_SETUP_DONE
         // test for sending sensor data
         sensor_data data;
         if (xQueueReceive(to_LoRa, &data, portMAX_DELAY) == pdTRUE) {
@@ -40,5 +44,6 @@ void LoRa_Task::taskImpl()
         }
         //wait 1s
         vTaskDelay(pdMS_TO_TICKS(1000));
+        #endif
     }
 }

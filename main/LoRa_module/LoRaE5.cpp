@@ -10,6 +10,7 @@
 #include "LoRaE5.h"
 
 #define APPKEY "<insert app key here>"
+//#define GATEWAY_SETUP_DONE
 
 static const char* TAG = "LoRaE5";
 
@@ -64,6 +65,8 @@ bool LoRaE5::lora_init()
     std::string devEui;
     get_devui(devEui);
     ESP_LOGI(TAG, "Device EUI: %s", devEui.c_str());
+
+    #ifdef GATEWAY_SETUP_DONE
     send_autoon_cmd("AT+KEY=APPKEY, " APPKEY); 
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
     
@@ -72,6 +75,7 @@ bool LoRaE5::lora_init()
         uart_driver_delete(LORA_UART_NUM);
         return false;
     }
+    #endif
 
     // need to maybe improve error checking in init
     return true;
