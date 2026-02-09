@@ -11,6 +11,8 @@
 #define RX 16
 
 //#define GATEWAY_SETUP_DONE
+//#define UNIFIED_DATA
+//#define SEPARATE_DATA
 
 static const char* TAG = "LoRa_Controller";
 
@@ -37,11 +39,18 @@ void LoRa_Task::taskImpl()
     while (true) {
         printf("Set up gateway");
         #ifdef GATEWAY_SETUP_DONE
+        #ifdef UNIFIED_DATA
+        sensor_data_unified data;
+        if (xQueueReceive(to_LoRa, &data, portMAX_DELAY) == pdTRUE) {
+            lora.send_sensor_data_unified(data);
+        }
+        #elif defined SEPARATE_DATA
         // test for sending sensor data
         sensor_data data;
         if (xQueueReceive(to_LoRa, &data, portMAX_DELAY) == pdTRUE) {
             lora.send_sensor_data(data);
         }
+        #endif
         //wait 1s
         vTaskDelay(pdMS_TO_TICKS(1000));
         #endif

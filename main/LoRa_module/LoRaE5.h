@@ -45,11 +45,14 @@ class LoRaE5
 
         // funcs for sending sensor data
         std::vector<uint8_t> sensor_data_payload(const sensor_data &data);
+        std::vector<uint8_t> sensor_data_payload_unified(const sensor_data_unified &data);
         std::string bytes_to_hex_string(const std::vector<uint8_t> &data);
         // a template to convert data to bytes and add it to the vector
         template<typename T>
         void append_bytes(std::vector<uint8_t> &vec, const T &value);
+    
         bool send_sensor_data(const sensor_data &data);
+        bool send_sensor_data_unified(const sensor_data_unified &data);
 
     private:
         uint32_t tx_pin;
@@ -58,7 +61,8 @@ class LoRaE5
 
         // clearing UART buffer
         // idk yet if needed
-        void clear_buffer();
+        //void clear_buffer();
+        bool send_payload(const std::vector<uint8_t> &payload);
 };
 
 

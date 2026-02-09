@@ -1,4 +1,4 @@
-# This program decodes hex string received from mqtt and packs to json
+# This program decodes hex string received from mqtt and packs to a dictionary
 # The endiannes of the system is important and should be specified to ensure correct byte order
 
 import struct

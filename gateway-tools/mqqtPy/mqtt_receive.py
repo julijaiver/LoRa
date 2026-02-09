@@ -1,7 +1,8 @@
 import paho.mqtt.client as mqtt
 import json
 import base64
-import hex_decode
+# here either unified or separate hex decoding can be used, depending on how the data is sent from the LoRa module
+import hex_decode_unified
 
 def on_connect(client, userdata, flags, reason_code, properties):
     print(f"Connected with result code {reason_code}")
@@ -22,7 +23,8 @@ def on_message(client, userdata, msg):
     print(f"Hex data: {hex_str}")
 
     print("Decoded: ")
-    print(hex_decode.unpack_data(hex_str, device_eui, 'little'))
+    # either unified or separate decoding 
+    print(hex_decode_unified.unpack_data(hex_str, device_eui, 'little'))
 
 client = mqtt.Client(
     client_id="mac-python-subscriber",

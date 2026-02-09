@@ -311,6 +311,7 @@ void LoRaE5::append_bytes(std::vector<uint8_t> &vector, const T &value) {
 }
 
 // appending sensor data to payload vector
+// this would be used if separate messages for each sensor are sent
 std::vector<uint8_t> LoRaE5::sensor_data_payload(const sensor_data &data) {
     std::vector<uint8_t> payload;
 
@@ -344,6 +345,28 @@ std::vector<uint8_t> LoRaE5::sensor_data_payload(const sensor_data &data) {
     return payload;
 }
 
+std::vector<uint8_t> LoRaE5::sensor_data_payload_unified(const sensor_data_unified &data) {
+    std::vector<uint8_t> payload;
+
+    append_bytes(payload, data.sps_data.pm25_numerical);
+    append_bytes(payload, data.sps_data.pm25_mass);
+    append_bytes(payload, data.sps_data.pm10_numerical);
+    append_bytes(payload, data.sps_data.pm10_mass);
+
+    append_bytes(payload, data.bmv_data.pm25_numerical);
+    append_bytes(payload, data.bmv_data.pm25_mass);
+    append_bytes(payload, data.bmv_data.pm10_numerical);
+    append_bytes(payload, data.bmv_data.pm10_mass);
+
+    append_bytes(payload, data.bme_data.voc);
+    append_bytes(payload, data.bme_data.pressure);
+    append_bytes(payload, data.bme_data.humidity);
+
+    append_bytes(payload, data.t_data.temperature);
+    
+    return payload;
+}
+
 std::string LoRaE5::bytes_to_hex_string(const std::vector<uint8_t> &data) {
     std::ostringstream ss;
     ss << std::hex << std::uppercase << std::setfill('0');
@@ -355,7 +378,15 @@ std::string LoRaE5::bytes_to_hex_string(const std::vector<uint8_t> &data) {
 
 bool LoRaE5::send_sensor_data(const sensor_data &data) {
     auto payload = sensor_data_payload(data);
-    // converting payload to hex string for sending via AT command
+    return send_payload(payload);
+}
+
+bool LoRaE5::send_sensor_data_unified(const sensor_data_unified &data) {
+    auto payload = sensor_data_payload_unified(data);
+    return send_payload(payload);
+}
+
+bool LoRaE5::send_payload(const std::vector<uint8_t> &payload) {
     std::string hex_payload = bytes_to_hex_string(payload);
     std::string at_command = "AT+MSGHEX=\"" + hex_payload + "\"";
 

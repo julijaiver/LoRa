@@ -32,6 +32,7 @@ struct tc74a2_data {
     float temperature;
 };
 
+// struct to use if separate messages for sensors are sent
 struct sensor_data {
     data_type type;
     union {
@@ -40,6 +41,14 @@ struct sensor_data {
         struct bme690_data bme_data;
         struct tc74a2_data t_data;
     } data;
+};
+
+// struct to use if all sensor data is sent in one message'
+struct sensor_data_unified {
+    sps30_data sps_data;
+    bmv080_data bmv_data;
+    bme690_data bme_data;
+    tc74a2_data t_data;
 };
 
 #endif //STRUCTS_H
