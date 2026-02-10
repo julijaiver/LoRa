@@ -39,8 +39,8 @@ def unpack_data(data_hex, deveui, endianness):
 
     return {"devEui": deveui, "data": data}
 
-    def hex_to_float(hex_str, endianness):
-        #int_val = int(hex_str, 16)
-        byte_array = bytes.fromhex(hex_str)
-        format_char = '<f' if endianness == 'little' else '>f'
-        return struct.unpack(format_char, byte_array)[0]
+def hex_to_float(hex_str, endianness):
+    #int_val = int(hex_str, 16)
+    byte_array = bytes.fromhex(hex_str)
+    format_char = '<f' if endianness == 'little' else '>f'
+    return struct.unpack(format_char, byte_array)[0]
