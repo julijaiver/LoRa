@@ -2,7 +2,7 @@
 # The endiannes of the system is important and should be specified to ensure correct byte order
 
 import struct
-
+    
 # unpack data and check the identifier to see which sensor data is received
 # data saved in a nested dictionary
 def unpack_data(data_hex, deveui, endianness):
@@ -45,6 +45,7 @@ def unpack_data(data_hex, deveui, endianness):
         data = {"temperature": hex_to_float(temperature, endianness)}
 
     return {"devEui": deveui, "type": data_type, "data": data}
+
 
 def hex_to_float(hex_str, endianness):
     #int_val = int(hex_str, 16)

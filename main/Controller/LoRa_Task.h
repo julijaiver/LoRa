@@ -18,16 +18,11 @@ class LoRa_Task
 
     private:
         void taskImpl();
-        //bool initialize_lora(); // probably not needed now, implemented it differently
-        //void send_AT(const char* command);
-        //void parse_AT_response(const char* response);
 
         TaskHandle_t control_handle;
         LoRaE5 lora;
 
         QueueHandle_t to_LoRa;
-        // var for saving AT response
-        const char* at_response;
 };
 
 

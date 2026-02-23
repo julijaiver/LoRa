@@ -20,14 +20,14 @@
 #define LORA_BAUDRATE 9600
 #define LORA_TIMEOUT_MS 2000
 #define BUFFER_SIZE 256
-#define LORA_UART_NUM UART_NUM_1
+#define LORA_UART_NUM UART_NUM_2
 #define RESPONSE_TIMEOUT_MS 10000
 #define JOIN_TIMEOUT_MS 30000
 
 class LoRaE5
 {
     public:
-        LoRaE5(uint32_t TX_pin, uint32_t RX_pin);
+        LoRaE5(uint32_t TX_pin, uint32_t RX_pin, uint8_t data_rate = 5);
 
         bool lora_init();
         void send_command(const char *cmd);
@@ -35,6 +35,7 @@ class LoRaE5
         void enable_lowpower(void);
         int uart_response(uint8_t *buf, int buf_size);
         int strip_autoon_prefix(uint8_t *response, int response_len, uint8_t **output_data);
+        //void read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix);
         std::string read_response_with_timeout(uint32_t timeout_ms, bool strip_prefix);
         std::string read_until_found(const std::vector<std::string> &expected_responses, uint32_t timeout_ms, bool strip_prefix);
         void log_error_response(const std::string &response);
@@ -44,19 +45,20 @@ class LoRaE5
         bool join_gateway(void);
 
         // funcs for sending sensor data
-        std::vector<uint8_t> sensor_data_payload(const sensor_data &data);
+        std::vector<uint8_t> sensor_data_payload_separate(const sensor_data &data);
         std::vector<uint8_t> sensor_data_payload_unified(const sensor_data_unified &data);
         std::string bytes_to_hex_string(const std::vector<uint8_t> &data);
         // a template to convert data to bytes and add it to the vector
         template<typename T>
         void append_bytes(std::vector<uint8_t> &vec, const T &value);
     
-        bool send_sensor_data(const sensor_data &data);
+        bool send_sensor_data_separate(const sensor_data &data);
         bool send_sensor_data_unified(const sensor_data_unified &data);
 
     private:
         uint32_t tx_pin;
         uint32_t rx_pin;
+        uint8_t data_rate;
         bool initialized;
 
         // clearing UART buffer

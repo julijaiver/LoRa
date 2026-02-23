@@ -9,8 +9,8 @@
 
 #include "LoRaE5.h"
 
-#define APPKEY "<insert app key here>"
-//#define GATEWAY_SETUP_DONE
+#define APPKEY 
+#define GATEWAY_SETUP_DONE
 
 static const char* TAG = "LoRaE5";
 
@@ -26,8 +26,8 @@ static const std::map<int8_t, const char*> lora_errors {
     { -24, "Either -21, -22 or -23." }
 };
 
-LoRaE5::LoRaE5(uint32_t TX_pin, uint32_t RX_pin)
-    : tx_pin(TX_pin), rx_pin(RX_pin), initialized(false)
+LoRaE5::LoRaE5(uint32_t TX_pin, uint32_t RX_pin, uint8_t data_rate)
+    : tx_pin(TX_pin), rx_pin(RX_pin), data_rate(data_rate), initialized(false)
 {
 }
 
@@ -43,21 +43,23 @@ bool LoRaE5::lora_init()
         .rx_flow_ctrl_thresh = 122,
         .source_clk = UART_SCLK_DEFAULT,
     };
+    int intr_alloc_flags = 0;
 
-    uart_driver_install(LORA_UART_NUM, BUFFER_SIZE * 2, 0, 0, NULL, 0);
-    uart_param_config(LORA_UART_NUM, &uart_config);
-    uart_set_pin(LORA_UART_NUM, tx_pin, rx_pin,
-                 UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    ESP_ERROR_CHECK(uart_driver_install(LORA_UART_NUM, BUFFER_SIZE * 2, 0, 0, NULL, intr_alloc_flags));
+    ESP_ERROR_CHECK(uart_param_config(LORA_UART_NUM, &uart_config));
+    ESP_ERROR_CHECK(uart_set_pin(LORA_UART_NUM, tx_pin, rx_pin,
+                 UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
 
     ESP_LOGI(TAG, "UART ready");
 
     // init commands to enable low power mode, set lwotaa mode and join network
     vTaskDelay(pdMS_TO_TICKS(100));
 
+    
     // things to do just once at the beginning of using the module
-    send_autoon_cmd("AT+MODE=LWOTAA");
+    send_command("AT+MODE=LWOTAA");
     std::string response {};
-    response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
     if (response != "+MODE: LWOTAA\r\n") {
         ESP_LOGE(TAG, "Failed to enter LWOTAA mode. Got response: '%s'", response.c_str());
         return false;
@@ -67,18 +69,18 @@ bool LoRaE5::lora_init()
     ESP_LOGI(TAG, "Device EUI: %s", devEui.c_str());
 
     #ifdef GATEWAY_SETUP_DONE
-    send_autoon_cmd("AT+KEY=APPKEY, " APPKEY); 
-    read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    send_command("AT+KEY=APPKEY, " APPKEY); 
+    read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
     
-    if (!initial_setup()) {
+    if (initial_setup()) {
         ESP_LOGE(TAG, "LoRa module initial setup failed");
         uart_driver_delete(LORA_UART_NUM);
         return false;
     }
     #endif
-
+    
     // need to maybe improve error checking in init
-    return true;
+    return false;
 }
 
 // just simple func for sending a command
@@ -164,6 +166,7 @@ std::string LoRaE5::read_response_with_timeout(uint32_t timeout_ms, bool strip_p
        used during deployment?
     */
     log_error_response(response);
+    ESP_LOGI(TAG, "%s", response.c_str());
     return response;
 }
 
@@ -284,6 +287,25 @@ bool LoRaE5::initial_setup(void) {
     enable_lowpower();
     read_response_with_timeout(RESPONSE_TIMEOUT_MS, false);
 
+    //reading current data rate
+    send_autoon_cmd("AT+DR");
+    std::string response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    if (!response.empty()) {
+        ESP_LOGI(TAG, "%s", response.c_str());
+    } else {
+        ESP_LOGE(TAG, "No response for data rate request");
+    }
+
+    //setting data rate
+    std::string dr_command = "AT+DR=" + std::to_string(data_rate);
+    send_autoon_cmd(dr_command.c_str());
+    std::string dr_response = read_response_with_timeout(RESPONSE_TIMEOUT_MS, true);
+    if (!dr_response.empty()) {
+        ESP_LOGI(TAG, "%s", dr_response.c_str());
+    } else {
+        ESP_LOGE(TAG, "No response for data rate set command");
+    }
+
     #ifdef GATEWAY_SETUP_DONE
     for (int attempt = 1; attempt <= 3; ++attempt) {
         ESP_LOGI(TAG, "Joining LoRa network, attempt %d", attempt);
@@ -299,6 +321,9 @@ bool LoRaE5::initial_setup(void) {
     }
     ESP_LOGE(TAG, "Failed to join LoRa network on attempt 3");
     return false;
+    #else
+    ESP_LOGW(TAG, "Gateway setup not done, skipping join process");
+    return true;
     #endif
 }
 
@@ -312,7 +337,7 @@ void LoRaE5::append_bytes(std::vector<uint8_t> &vector, const T &value) {
 
 // appending sensor data to payload vector
 // this would be used if separate messages for each sensor are sent
-std::vector<uint8_t> LoRaE5::sensor_data_payload(const sensor_data &data) {
+std::vector<uint8_t> LoRaE5::sensor_data_payload_separate(const sensor_data &data) {
     std::vector<uint8_t> payload;
 
     payload.push_back(static_cast<uint8_t>(data.type)); // first byte is data type
@@ -376,8 +401,8 @@ std::string LoRaE5::bytes_to_hex_string(const std::vector<uint8_t> &data) {
     return ss.str();
 }
 
-bool LoRaE5::send_sensor_data(const sensor_data &data) {
-    auto payload = sensor_data_payload(data);
+bool LoRaE5::send_sensor_data_separate(const sensor_data &data) {
+    auto payload = sensor_data_payload_separate(data);
     return send_payload(payload);
 }
 

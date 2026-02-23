@@ -8,11 +8,11 @@
 //#define TX 43
 //#define RX 44
 #define TX 17
-#define RX 16
+#define RX 18
 
-//#define GATEWAY_SETUP_DONE
-//#define UNIFIED_DATA
-//#define SEPARATE_DATA
+#define GATEWAY_SETUP_DONE
+#define UNIFIED_DATA
+//#define SEPARATE_DATA 
 
 static const char* TAG = "LoRa_Controller";
 
@@ -52,7 +52,7 @@ void LoRa_Task::taskImpl()
         }
         #endif
         //wait 1s
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(5000));
         #endif
     }
 }
